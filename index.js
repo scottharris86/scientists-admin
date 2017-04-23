@@ -1,6 +1,11 @@
 /* eslint-env node */
 'use strict';
 
-module.exports = {
-  name: 'scientist-admin'
-};
+
+const EngineAddon = require('ember-engines/lib/engine-addon');
+
+module.exports = EngineAddon.extend({
+  name: 'scientist-admin',
+  lazyLoading: true
+});
+
